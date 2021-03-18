@@ -27,7 +27,7 @@ jobs:
       
       - name: test read var
         env:
-          GOOGLE_CREDENTIALS: ${{ secret.GOOGLE_CREDENTIALS }}
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
         run: echo "$GOOGLE_CREDENTIALS"
       
 
